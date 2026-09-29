@@ -74,7 +74,19 @@ Before implementation, make the main technical boundaries explicit:
 
 Use references/realworld.md for cross-stack implementation comparison and references/system-design-primer.md for architecture/scalability decisions.
 
-## 5. Verify the technical environment
+## 6. Choose patterns only when they solve a real problem
+
+Before adding an abstraction, identify the recurring problem, responsibility boundary, or dependency that needs to change.
+
+- Prefer simple composition when it is sufficient.
+- Introduce a design pattern only when it reduces meaningful coupling or clarifies a recurring behavior.
+- Record important pattern choices and their trade-offs.
+- Keep domain/application patterns distinct from framework-specific patterns.
+- Do not import a pattern's implementation blindly from another language or framework.
+
+Use references/design-patterns.md for pattern-selection guidance.
+
+## 7. Verify the technical environment
 
 Before relying on framework, UI-library, chart, icon, animation, API, or other versioned behavior:
 - identify the actual target environment
@@ -82,7 +94,7 @@ Before relying on framework, UI-library, chart, icon, animation, API, or other v
 - respect the project's pinned versions
 - avoid introducing dependencies without a reason
 
-## 6. Implement the real interface
+## 8. Implement the real interface
 
 Build against the actual target stack.
 
@@ -96,7 +108,7 @@ Keep:
 
 For WordPress, adapt to the active theme/builder instead of blindly pasting prototype code.
 
-## 7. Implement behavior and data states
+## 9. Implement behavior and data states
 
 For interactive or data-driven interfaces, verify:
 - loading
@@ -113,7 +125,7 @@ For interactive or data-driven interfaces, verify:
 
 Summary counts, lists, filters, selections, and details must represent the same underlying dataset.
 
-## 8. Responsive and accessibility pass
+## 10. Responsive and accessibility pass
 
 Check desktop, tablet, and mobile as applicable:
 - layout
@@ -128,7 +140,7 @@ Check desktop, tablet, and mobile as applicable:
 
 Also check keyboard access, focus behavior, semantics, accessible names, and reduced-motion behavior when relevant.
 
-## 9. Browser QA
+## 11. Browser QA
 
 Use Playwright CLI when a real browser is available.
 
@@ -140,7 +152,7 @@ Capture evidence appropriate to the problem:
 
 A successful click or page load does not by itself prove visual correctness.
 
-## 10. Visual QA and refinement
+## 12. Visual QA and refinement
 
 Compare the rendered result against the approved reference or intended design.
 
@@ -154,7 +166,7 @@ Prioritize:
 
 Fix the smallest relevant problem, rerun the affected checks, and capture new evidence.
 
-## 11. Document the result
+## 13. Document the result
 
 For reusable or significant projects, record:
 - technology/environment
