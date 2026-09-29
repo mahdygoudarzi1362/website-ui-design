@@ -44,6 +44,6 @@ For a new website, SaaS page, dashboard, or application interface, start with `w
 ## Repository structure
 
 - workflow/ — end-to-end workflows for different project types
-- references/ — tools and technical references
+- references/ — tools, frameworks, and technical/design references
 - guidelines/ — implementation and QA rules
 - projects/ — project-specific decisions and QA records
