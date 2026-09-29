@@ -17,14 +17,16 @@ See references/context7.md.
 ## 5. UI baseline and evidence review
 Apply the focused UI quality checks before production adaptation:
 - visual hierarchy, spacing, typography, data alignment, loading/empty states
+- operational states when the UI contains live or asynchronous data
+- summary/detail/count consistency for data-heavy surfaces
 - accessibility basics such as keyboard/focus behavior and accessible names
 - motion performance when animation exists
 - evidence-based design-system decisions; do not promote local implementation details into global rules
 
-Use guidelines/ui-quality.md and guidelines/design-system-evidence.md. For focused task-specific guidance, see references/ui-skills.md.
+Use guidelines/ui-quality.md, guidelines/operational-data-ui.md, and guidelines/design-system-evidence.md. For focused task-specific guidance, see references/ui-skills.md and references/strix.md.
 
 ## 6. Clean and review
-Remove unnecessary code, verify semantics, assets, responsiveness, accessibility basics, and browser behavior.
+Remove unnecessary code, verify semantics, assets, responsiveness, accessibility basics, browser behavior, and runtime state handling.
 
 ## 7. WordPress adaptation
 Inspect the target theme, builder, existing global styles, fonts, breakpoints, plugins, and available components. Adapt the prototype to the actual environment instead of blindly pasting generated code.
