@@ -1,6 +1,8 @@
 # Website UI Design
 
-A reusable standard for website UI design and implementation, especially when starting from screenshots or visual references.
+A reusable standard for designing and developing web pages, web applications, dashboards, and application interfaces—from requirements or visual references through implementation, browser QA, and refinement.
+
+The repository is intentionally broader than a UI/UX checklist: it is a reusable design-and-development playbook for real web and app interfaces.
 
 ## Purpose
 
@@ -8,7 +10,11 @@ This repository is independent of AnalysData and independent of the destination 
 
 ## Standard workflow
 
-Screenshot/reference → UI analysis → prototype with Screenshot-to-Code → current library/API verification → UI baseline and evidence review → clean/review code → WordPress-ready implementation → CSS/JS isolation → responsive implementation → install on the real site → browser QA with Playwright → visual QA → compare and refine.
+The workflow starts from whichever input the project has: requirements, user flows, an existing interface, a screenshot/Figma reference, or a working page.
+
+Requirements/reference → information architecture and flow → UI analysis → prototype/design system → current library/API verification → implementation → data/API and interaction states → responsive/accessibility → browser QA with Playwright → visual QA → compare, refine, and document.
+
+For WordPress and screenshot-driven work, use the specialized workflow in `workflow/screenshot-to-wordpress.md`.
 
 ## Core principles
 
@@ -27,12 +33,13 @@ Screenshot/reference → UI analysis → prototype with Screenshot-to-Code → c
 - Dashboard shells should treat navigation, responsive behavior, focus, empty states, and dense data presentation as one system.
 - Design-system rules require evidence; accidental local patterns are not automatically promoted to global rules.
 - The installed result must be checked in a real browser when possible, using screenshots and interaction evidence rather than assumptions.
-- The workflow supports WordPress, Elementor, Kadence, Gutenberg, Flatsome, and custom sites.
+- The workflow supports websites, web applications, SaaS dashboards, application interfaces, and responsive/mobile web experiences.
+- WordPress, Elementor, Kadence, Gutenberg, Flatsome, and custom stacks are supported integration targets.
 - The destination site does not need to be connected to GitHub.
 
 ## Repository structure
 
-- workflow/ — end-to-end workflows
+- workflow/ — end-to-end workflows for different project types
 - references/ — tools and technical references
 - guidelines/ — implementation and QA rules
 - projects/ — project-specific decisions and QA records
