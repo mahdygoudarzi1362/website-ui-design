@@ -8,7 +8,7 @@ This repository is independent of AnalysData and independent of the destination 
 
 ## Standard workflow
 
-Screenshot/reference → UI analysis → prototype with Screenshot-to-Code → current library/API verification → UI baseline and evidence review → clean/review code → WordPress-ready implementation → CSS/JS isolation → responsive implementation → install on the real site → visual QA → compare and refine.
+Screenshot/reference → UI analysis → prototype with Screenshot-to-Code → current library/API verification → UI baseline and evidence review → clean/review code → WordPress-ready implementation → CSS/JS isolation → responsive implementation → install on the real site → browser QA with Playwright → visual QA → compare and refine.
 
 ## Core principles
 
@@ -26,7 +26,7 @@ Screenshot/reference → UI analysis → prototype with Screenshot-to-Code → c
 - Product/dashboard UI should use semantic visual roles and reusable data primitives rather than scattered one-off styling.
 - Dashboard shells should treat navigation, responsive behavior, focus, empty states, and dense data presentation as one system.
 - Design-system rules require evidence; accidental local patterns are not automatically promoted to global rules.
-- The installed result must be checked against the reference visually.
+- The installed result must be checked in a real browser when possible, using screenshots and interaction evidence rather than assumptions.
 - The workflow supports WordPress, Elementor, Kadence, Gutenberg, Flatsome, and custom sites.
 - The destination site does not need to be connected to GitHub.
 
