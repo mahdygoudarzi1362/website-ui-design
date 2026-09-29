@@ -37,6 +37,10 @@ For WordPress and screenshot-driven work, use the specialized workflow in `workf
 - WordPress, Elementor, Kadence, Gutenberg, Flatsome, and custom stacks are supported integration targets.
 - The destination site does not need to be connected to GitHub.
 
+## Capability map
+
+For a fast overview of everything this system provides, see [`CAPABILITIES.md`](CAPABILITIES.md).
+
 ## General development workflow
 
 For a new website, SaaS page, dashboard, or application interface, start with `workflow/web-app-development.md`. Use platform-specific workflows only when their constraints apply.
