@@ -140,6 +140,21 @@ Check desktop, tablet, and mobile as applicable:
 
 Also check keyboard access, focus behavior, semantics, accessible names, and reduced-motion behavior when relevant.
 
+## 11. Performance, operations, and security readiness
+
+Before browser QA for a production-oriented application, verify the relevant end-to-end concerns:
+
+- API collections are paginated and payloads are no larger than needed.
+- Expensive/N+1 database access has been considered and connection usage is bounded.
+- Frontend bundles/assets and client-side work are appropriate for the target experience.
+- Slow work is asynchronous when it does not need to block the user request.
+- Actionable latency/error/resource/dependency signals exist where operational risk justifies them.
+- Deployment has an appropriate automated-check and rollback path.
+- Authentication, authorization, input validation, session/security controls, and rate limiting are addressed according to the product's risk.
+- Scaling mechanisms are added only when workload or reliability requirements justify them.
+
+Use references/scalable-web-applications.md together with references/system-design-primer.md.
+
 ## 11. Browser QA
 
 Use Playwright CLI when a real browser is available.
