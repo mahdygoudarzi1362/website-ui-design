@@ -23,7 +23,7 @@ Apply the focused UI quality checks before production adaptation:
 - motion performance when animation exists
 - evidence-based design-system decisions; do not promote local implementation details into global rules
 
-Use guidelines/ui-quality.md, guidelines/operational-data-ui.md, and guidelines/design-system-evidence.md. For focused task-specific guidance, see references/ui-skills.md and references/strix.md.
+Use guidelines/ui-quality.md, guidelines/operational-data-ui.md, guidelines/design-system-evidence.md, and guidelines/dashboard-ui.md. For focused task-specific guidance, see references/ui-skills.md, references/strix.md, and references/supabase.md.
 
 ## 6. Clean and review
 Remove unnecessary code, verify semantics, assets, responsiveness, accessibility basics, browser behavior, and runtime state handling.
