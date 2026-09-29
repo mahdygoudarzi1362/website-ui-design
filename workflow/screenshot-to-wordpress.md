@@ -40,10 +40,15 @@ Validate desktop, tablet, and mobile behavior. Check layout, typography, buttons
 ## 10. Real-site installation
 Implement on the actual destination site.
 
-## 11. Visual QA
+## 11. Browser QA and visual evidence
+Use Playwright CLI when a real browser is available. Open the installed page, capture screenshots at the reference viewport, inspect snapshots for structure/interactions, exercise the relevant flow, and repeat at required responsive viewports. When a visual symptom needs diagnosis, inspect console/network output; use trace/video only when timing or multi-step interaction makes screenshots insufficient.
+
+See references/playwright-cli.md and guidelines/browser-qa.md.
+
+## 12. Visual QA
 Capture the installed result at the same relevant viewport sizes as the reference.
 
-## 12. Compare and refine
+## 13. Compare and refine
 Record differences, fix them in priority order, capture a new screenshot, and repeat until the agreed visual quality is reached.
 
 The destination website does not need to be connected to GitHub. This repository stores the reusable process and project documentation.
