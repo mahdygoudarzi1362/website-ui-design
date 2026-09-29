@@ -60,6 +60,20 @@ Establish only the design rules supported by the product/reference:
 
 Prototype code is not automatically production architecture.
 
+## 5. Architecture and stack boundaries
+
+Before implementation, make the main technical boundaries explicit:
+
+- Separate product requirements and user flows from the framework or language used to implement them.
+- Identify frontend, backend/API, authentication, persistence, external services, deployment, and operational dependencies.
+- For multi-user or growing applications, record expected traffic, concurrency, data volume, latency, availability, security, and cost constraints.
+- Keep application state as local or stateless as practical; introduce shared stores, caches, queues, or other infrastructure only when the requirements justify them.
+- Identify single points of failure and important failure boundaries.
+- Compare alternative implementations by behavior, responsibility, operational cost, and maintainability rather than syntax or popularity.
+- Do not copy demo-project architecture into production without validating its scale, security, performance, and maintenance requirements.
+
+Use references/realworld.md for cross-stack implementation comparison and references/system-design-primer.md for architecture/scalability decisions.
+
 ## 5. Verify the technical environment
 
 Before relying on framework, UI-library, chart, icon, animation, API, or other versioned behavior:
