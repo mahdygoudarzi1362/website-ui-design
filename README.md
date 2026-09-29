@@ -20,6 +20,9 @@ Screenshot/reference → UI analysis → prototype with Screenshot-to-Code → c
 - JavaScript must be scoped to the component or feature.
 - Responsive behavior is part of the design, not a final afterthought.
 - Accessibility and motion performance are part of UI QA.
+- Data-heavy UI must model loading, live, completed, empty, unavailable, partial, and error states explicitly when applicable.
+- Summary counts, lists, filters, and detail views must correspond to the same underlying dataset.
+- Findings should expose evidence and meaningful status/severity rather than only decorative labels.
 - Design-system rules require evidence; accidental local patterns are not automatically promoted to global rules.
 - The installed result must be checked against the reference visually.
 - The workflow supports WordPress, Elementor, Kadence, Gutenberg, Flatsome, and custom sites.
